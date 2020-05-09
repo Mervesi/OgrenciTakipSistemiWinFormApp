@@ -8,14 +8,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraBars.Ribbon;
+using DmssYazilim.OgrenciTakip.Common.Enums;
 
 namespace DmssYazilim.OgrenciTakip.UI.Win.Forms.BaseForms
 {
-    public partial class BaseKartForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class BaseEditForm : RibbonForm
     {
-        public BaseKartForm()
+        protected internal IslemTuru IslemTuru;
+        protected internal long Id;
+        protected internal bool RefreshYapilacak;
+
+        public BaseEditForm()
         {
             InitializeComponent();
+        }
+
+        protected internal void Yukle()
+        {
+
         }
 
         private void ribbonControl1_Click(object sender, EventArgs e)

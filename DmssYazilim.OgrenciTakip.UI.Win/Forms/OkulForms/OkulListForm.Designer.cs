@@ -1,6 +1,6 @@
 ﻿namespace DmssYazilim.OgrenciTakip.UI.Win.Forms.OkulForms
 {
-    partial class OkulKartlari
+    partial class OkulListForm
     {
         /// <summary>
         /// Required designer variable.

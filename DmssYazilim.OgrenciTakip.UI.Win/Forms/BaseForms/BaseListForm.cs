@@ -12,16 +12,16 @@ using DevExpress.XtraBars;
 
 namespace DmssYazilim.OgrenciTakip.UI.Win.Forms.BaseForms
 {
-    public partial class BaseKartlarForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class BaseListForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public BaseKartlarForm()
+        public BaseListForm()
         {
             InitializeComponent();
         }
 
         private void ShowEditForm(long id)
         {
-            var result =
+          //  var result =
         }
 
         private void EventsLoad()
@@ -74,7 +74,7 @@ namespace DmssYazilim.OgrenciTakip.UI.Win.Forms.BaseForms
             else if (e.Item==btnYeni)
             {
                 //yetki kontrolu olacak
-                ShowEditForm();
+                ShowEditForm(-1);
             }
         }
 

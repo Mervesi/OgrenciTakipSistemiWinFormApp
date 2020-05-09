@@ -88,29 +88,29 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BaseForms\BaseKartForm.cs">
+    <Compile Include="Forms\BaseForms\BaseEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseKartForm.Designer.cs">
-      <DependentUpon>BaseKartForm.cs</DependentUpon>
+    <Compile Include="Forms\BaseForms\BaseEditForm.Designer.cs">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseKartlarForm.cs">
+    <Compile Include="Forms\BaseForms\BaseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BaseForms\BaseKartlarForm.Designer.cs">
-      <DependentUpon>BaseKartlarForm.cs</DependentUpon>
+    <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKarti.cs">
+    <Compile Include="Forms\OkulForms\OkulEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKarti.Designer.cs">
-      <DependentUpon>OkulKarti.cs</DependentUpon>
+    <Compile Include="Forms\OkulForms\OkulEditForm.Designer.cs">
+      <DependentUpon>OkulEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKartlari.cs">
+    <Compile Include="Forms\OkulForms\OkulListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OkulForms\OkulKartlari.Designer.cs">
-      <DependentUpon>OkulKartlari.cs</DependentUpon>
+    <Compile Include="Forms\OkulForms\OkulListForm.Designer.cs">
+      <DependentUpon>OkulListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GenelForms\AnaForm.cs">
       <SubType>Form</SubType>
@@ -127,6 +127,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Show\ShowEditForms.cs" />
+    <Compile Include="Show\ShowListForms.cs" />
     <Compile Include="UserControls\Controls\MyButtonEdit.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -211,17 +213,17 @@
     <Compile Include="UserControls\Navigators\SmallNavigator.Designer.cs">
       <DependentUpon>SmallNavigator.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\BaseForms\BaseKartForm.resx">
-      <DependentUpon>BaseKartForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BaseForms\BaseKartlarForm.resx">
-      <DependentUpon>BaseKartlarForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OkulForms\OkulKarti.resx">
-      <DependentUpon>OkulKarti.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\OkulForms\OkulEditForm.resx">
+      <DependentUpon>OkulEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OkulForms\OkulKartlari.resx">
-      <DependentUpon>OkulKartlari.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\OkulForms\OkulListForm.resx">
+      <DependentUpon>OkulListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenelForms\AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
@@ -276,6 +278,10 @@
     <ProjectReference Include="..\DmssYazilim.OgrenciTakip.Bll\DmssYazilim.OgrenciTakip.Bll.csproj">
       <Project>{DD11536D-18F6-4F43-A321-CA911C563740}</Project>
       <Name>DmssYazilim.OgrenciTakip.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DmssYazilim.OgrenciTakip.Common\DmssYazilim.OgrenciTakip.Common.csproj">
+      <Project>{50F3519A-BC0D-4CDD-A56B-7F634C5A92FE}</Project>
+      <Name>DmssYazilim.OgrenciTakip.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\DmssYazilim.OgrenciTakip.Model\DmssYazilim.OgrenciTakip.Model.csproj">
       <Project>{3FC9C2A3-688C-488D-AEEE-8CE5C735627A}</Project>

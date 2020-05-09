@@ -1,6 +1,6 @@
 ﻿namespace DmssYazilim.OgrenciTakip.UI.Win.Forms.BaseForms
 {
-    partial class BaseKartForm
+    partial class BaseEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseKartForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseEditForm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnYeni = new DevExpress.XtraBars.BarButtonItem();
             this.btnKaydet = new DevExpress.XtraBars.BarButtonItem();
