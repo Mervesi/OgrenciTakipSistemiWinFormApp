@@ -1,10 +1,11 @@
 ﻿using DmssYazilim.OgrenciTakip.Common.Enums;
 using DmssYazilim.OgrenciTakip.UI.Win.Forms.BaseForms;
+using DmssYazilim.OgrenciTakip.UI.Win.Show.Interfaces;
 using System;
 
 namespace DmssYazilim.OgrenciTakip.UI.Win.Show
 {
-    public class ShowEditForms<TForm> where TForm : BaseEditForm //InterfaceGelecek
+    public class ShowEditForms<TForm>:IBaseFormShow where TForm : BaseEditForm 
     {
         public long ShowDialogEditForm(KartTuru kartTuru, long id)//,params object[] prm)
         {
